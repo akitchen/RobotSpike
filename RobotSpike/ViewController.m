@@ -7,12 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "AnotherViewController.h"
 
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+- (IBAction)presentAnotherViewController:(UIButton *)sender {
+    AnotherViewController *anotherViewController = [[AnotherViewController alloc] init];
+    [self.navigationController presentViewController:anotherViewController animated:YES completion:nil];
+}
+
+- (IBAction)pushAnotherViewController:(UIButton *)sender {
+    AnotherViewController *anotherViewController = [[AnotherViewController alloc] init];
+    [self.navigationController pushViewController:anotherViewController animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

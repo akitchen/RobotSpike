@@ -14,6 +14,19 @@
 		AE60CF151A15763300BD4585 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF141A15763300BD4585 /* Images.xcassets */; };
 		AE60CF181A15763300BD4585 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF161A15763300BD4585 /* LaunchScreen.xib */; };
 		AE60CF241A15763300BD4585 /* RobotSpikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF231A15763300BD4585 /* RobotSpikeTests.m */; };
+		AE60CF461A1576A200BD4585 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE60CF451A1576A200BD4585 /* UIKit.framework */; };
+		AE60CF471A1576A200BD4585 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE60CF321A15766600BD4585 /* Foundation.framework */; };
+		AE60CF491A1576A200BD4585 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE60CF481A1576A200BD4585 /* CoreGraphics.framework */; };
+		AE60CF4F1A1576A200BD4585 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF4E1A1576A200BD4585 /* main.m */; };
+		AE60CF511A1576A200BD4585 /* RobotSpikeCedarSpecs-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF501A1576A200BD4585 /* RobotSpikeCedarSpecs-Info.plist */; };
+		AE60CF531A1576A200BD4585 /* RobotSpikeCedarSpecs-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF521A1576A200BD4585 /* RobotSpikeCedarSpecs-Prefix.pch */; };
+		AE60CF551A1576A300BD4585 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE60CF541A1576A300BD4585 /* Cedar-iOS.framework */; };
+		AE60CF571A1576A300BD4585 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF561A1576A300BD4585 /* Default-568h@2x.png */; };
+		AE60CF591A1576A300BD4585 /* RobotSpikeSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF581A1576A300BD4585 /* RobotSpikeSpec.mm */; };
+		AE60CF5F1A1578C900BD4585 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF5E1A1578C900BD4585 /* AnotherViewController.m */; };
+		AE60CF601A1578C900BD4585 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF5E1A1578C900BD4585 /* AnotherViewController.m */; };
+		AE60CF611A15792B00BD4585 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF0F1A15763300BD4585 /* ViewController.m */; };
+		AE60CF621A157B0500BD4585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF111A15763300BD4585 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +53,19 @@
 		AE60CF1D1A15763300BD4585 /* RobotSpikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobotSpikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE60CF221A15763300BD4585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE60CF231A15763300BD4585 /* RobotSpikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RobotSpikeTests.m; sourceTree = "<group>"; };
+		AE60CF321A15766600BD4585 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		AE60CF441A1576A200BD4585 /* RobotSpikeCedarSpecs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobotSpikeCedarSpecs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE60CF451A1576A200BD4585 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AE60CF481A1576A200BD4585 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AE60CF4C1A1576A200BD4585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE60CF4E1A1576A200BD4585 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE60CF501A1576A200BD4585 /* RobotSpikeCedarSpecs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RobotSpikeCedarSpecs-Info.plist"; sourceTree = "<group>"; };
+		AE60CF521A1576A200BD4585 /* RobotSpikeCedarSpecs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RobotSpikeCedarSpecs-Prefix.pch"; sourceTree = "<group>"; };
+		AE60CF541A1576A300BD4585 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
+		AE60CF561A1576A300BD4585 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AE60CF581A1576A300BD4585 /* RobotSpikeSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RobotSpikeSpec.mm; sourceTree = "<group>"; };
+		AE60CF5D1A1578C900BD4585 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
+		AE60CF5E1A1578C900BD4585 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +83,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE60CF411A1576A200BD4585 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE60CF491A1576A200BD4585 /* CoreGraphics.framework in Frameworks */,
+				AE60CF461A1576A200BD4585 /* UIKit.framework in Frameworks */,
+				AE60CF551A1576A300BD4585 /* Cedar-iOS.framework in Frameworks */,
+				AE60CF471A1576A200BD4585 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +102,8 @@
 			children = (
 				AE60CF061A15763300BD4585 /* RobotSpike */,
 				AE60CF201A15763300BD4585 /* RobotSpikeTests */,
+				AE60CF4A1A1576A200BD4585 /* RobotSpikeCedarSpecs */,
+				AE60CF311A15766600BD4585 /* Frameworks */,
 				AE60CF051A15763300BD4585 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +113,7 @@
 			children = (
 				AE60CF041A15763300BD4585 /* RobotSpike.app */,
 				AE60CF1D1A15763300BD4585 /* RobotSpikeTests.xctest */,
+				AE60CF441A1576A200BD4585 /* RobotSpikeCedarSpecs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,14 +121,16 @@
 		AE60CF061A15763300BD4585 /* RobotSpike */ = {
 			isa = PBXGroup;
 			children = (
+				AE60CF5D1A1578C900BD4585 /* AnotherViewController.h */,
+				AE60CF5E1A1578C900BD4585 /* AnotherViewController.m */,
 				AE60CF0B1A15763300BD4585 /* AppDelegate.h */,
 				AE60CF0C1A15763300BD4585 /* AppDelegate.m */,
-				AE60CF0E1A15763300BD4585 /* ViewController.h */,
-				AE60CF0F1A15763300BD4585 /* ViewController.m */,
-				AE60CF111A15763300BD4585 /* Main.storyboard */,
 				AE60CF141A15763300BD4585 /* Images.xcassets */,
 				AE60CF161A15763300BD4585 /* LaunchScreen.xib */,
+				AE60CF111A15763300BD4585 /* Main.storyboard */,
 				AE60CF071A15763300BD4585 /* Supporting Files */,
+				AE60CF0E1A15763300BD4585 /* ViewController.h */,
+				AE60CF0F1A15763300BD4585 /* ViewController.m */,
 			);
 			path = RobotSpike;
 			sourceTree = "<group>";
@@ -115,6 +157,38 @@
 			isa = PBXGroup;
 			children = (
 				AE60CF221A15763300BD4585 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE60CF311A15766600BD4585 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE60CF321A15766600BD4585 /* Foundation.framework */,
+				AE60CF451A1576A200BD4585 /* UIKit.framework */,
+				AE60CF481A1576A200BD4585 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE60CF4A1A1576A200BD4585 /* RobotSpikeCedarSpecs */ = {
+			isa = PBXGroup;
+			children = (
+				AE60CF501A1576A200BD4585 /* RobotSpikeCedarSpecs-Info.plist */,
+				AE60CF521A1576A200BD4585 /* RobotSpikeCedarSpecs-Prefix.pch */,
+				AE60CF541A1576A300BD4585 /* Cedar-iOS.framework */,
+				AE60CF561A1576A300BD4585 /* Default-568h@2x.png */,
+				AE60CF581A1576A300BD4585 /* RobotSpikeSpec.mm */,
+				AE60CF4B1A1576A200BD4585 /* Supporting Files */,
+			);
+			path = RobotSpikeCedarSpecs;
+			sourceTree = "<group>";
+		};
+		AE60CF4B1A1576A200BD4585 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE60CF4C1A1576A200BD4585 /* Info.plist */,
+				AE60CF4E1A1576A200BD4585 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +231,23 @@
 			productReference = AE60CF1D1A15763300BD4585 /* RobotSpikeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AE60CF431A1576A200BD4585 /* RobotSpikeCedarSpecs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE60CF5A1A1576A300BD4585 /* Build configuration list for PBXNativeTarget "RobotSpikeCedarSpecs" */;
+			buildPhases = (
+				AE60CF401A1576A200BD4585 /* Sources */,
+				AE60CF411A1576A200BD4585 /* Frameworks */,
+				AE60CF421A1576A200BD4585 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RobotSpikeCedarSpecs;
+			productName = RobotSpikeCedarSpecs;
+			productReference = AE60CF441A1576A200BD4585 /* RobotSpikeCedarSpecs.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -172,6 +263,9 @@
 					AE60CF1C1A15763300BD4585 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = AE60CF031A15763300BD4585;
+					};
+					AE60CF431A1576A200BD4585 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -190,6 +284,7 @@
 			targets = (
 				AE60CF031A15763300BD4585 /* RobotSpike */,
 				AE60CF1C1A15763300BD4585 /* RobotSpikeTests */,
+				AE60CF431A1576A200BD4585 /* RobotSpikeCedarSpecs */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +307,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE60CF421A1576A200BD4585 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE60CF531A1576A200BD4585 /* RobotSpikeCedarSpecs-Prefix.pch in Resources */,
+				AE60CF511A1576A200BD4585 /* RobotSpikeCedarSpecs-Info.plist in Resources */,
+				AE60CF571A1576A300BD4585 /* Default-568h@2x.png in Resources */,
+				AE60CF621A157B0500BD4585 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -221,6 +327,7 @@
 			files = (
 				AE60CF101A15763300BD4585 /* ViewController.m in Sources */,
 				AE60CF0D1A15763300BD4585 /* AppDelegate.m in Sources */,
+				AE60CF5F1A1578C900BD4585 /* AnotherViewController.m in Sources */,
 				AE60CF0A1A15763300BD4585 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +337,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE60CF241A15763300BD4585 /* RobotSpikeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE60CF401A1576A200BD4585 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE60CF611A15792B00BD4585 /* ViewController.m in Sources */,
+				AE60CF4F1A1576A200BD4585 /* main.m in Sources */,
+				AE60CF601A1578C900BD4585 /* AnotherViewController.m in Sources */,
+				AE60CF591A1576A300BD4585 /* RobotSpikeSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +513,49 @@
 			};
 			name = Release;
 		};
+		AE60CF5B1A1576A300BD4585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RobotSpikeCedarSpecs/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RobotSpikeCedarSpecs/Info.plist;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE60CF5C1A1576A300BD4585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RobotSpikeCedarSpecs/Frameworks",
+				);
+				INFOPLIST_FILE = RobotSpikeCedarSpecs/Info.plist;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-all_load",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -420,6 +581,14 @@
 			buildConfigurations = (
 				AE60CF2B1A15763300BD4585 /* Debug */,
 				AE60CF2C1A15763300BD4585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AE60CF5A1A1576A300BD4585 /* Build configuration list for PBXNativeTarget "RobotSpikeCedarSpecs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE60CF5B1A1576A300BD4585 /* Debug */,
+				AE60CF5C1A1576A300BD4585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
