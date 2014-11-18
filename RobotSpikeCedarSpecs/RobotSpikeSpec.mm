@@ -1,14 +1,18 @@
 #import <Cedar-iOS/Cedar.h>
+#import "Robot.h"
+
 #import "ViewController.h"
 #import "AnotherViewController.h"
+
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
+
 SPEC_BEGIN(RobotSpikeSpec)
 
-void(^advanceRunLoop)(NSTimeInterval) = ^(NSTimeInterval interval){
-    [[NSRunLoop currentRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:interval]];
+void(^advanceRunLoop)() = ^{
+    [RBTimeLapse advanceMainRunLoop];
 };
 
 describe(@"Robot spike", ^{
@@ -26,11 +30,11 @@ describe(@"Robot spike", ^{
         window.rootViewController = navigationController;
         [window makeKeyAndVisible];
 
-        advanceRunLoop(0);
+        advanceRunLoop();
     });
 
     afterEach(^{
-        advanceRunLoop(1);
+        advanceRunLoop();
 
         [window.subviews makeObjectsPerformSelector:@selector(removeFromSuperview) withObject:nil];
     });
@@ -60,32 +64,32 @@ describe(@"Robot spike", ^{
 
         describe(@"popping the top view controller", ^{
             beforeEach(^{
-                [controller.navigationController popViewControllerAnimated:YES];
+                [RBTimeLapse disableAnimationsInBlock:^{
+                    [controller.navigationController popViewControllerAnimated:YES];
+                }];
             });
-
-            it(@"should fail without advancing the runloop", ^{
-                ^{ controller.navigationController.topViewController should equal(controller); } should raise_exception;
-            });
+//
+//            it(@"should fail without advancing the run loop", ^{
+//                ^{ controller.navigationController.topViewController should equal(controller); } should raise_exception;
+//            });
 
             it(@"should present the initial view controller", ^{
-                advanceRunLoop(1);
-
                 controller.navigationController.topViewController should equal(controller);
             });
         });
 
         describe(@"popping to the root view controller", ^{
             beforeEach(^{
-                [controller.navigationController popToRootViewControllerAnimated:YES];
+                [RBTimeLapse disableAnimationsInBlock:^{
+                    [controller.navigationController popToRootViewControllerAnimated:YES];
+                }];
             });
-
-            it(@"should fail without advancing the runloop", ^{
-                ^{ controller.navigationController.topViewController should equal(controller); } should raise_exception;
-            });
+//
+//            it(@"should fail without advancing the runloop", ^{
+//                ^{ controller.navigationController.topViewController should equal(controller); } should raise_exception;
+//            });
 
             it(@"should present the initial view controller", ^{
-                advanceRunLoop(1);
-
                 controller.navigationController.topViewController should equal(controller);
             });
         });

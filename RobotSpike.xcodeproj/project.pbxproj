@@ -27,6 +27,7 @@
 		AE60CF601A1578C900BD4585 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF5E1A1578C900BD4585 /* AnotherViewController.m */; };
 		AE60CF611A15792B00BD4585 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE60CF0F1A15763300BD4585 /* ViewController.m */; };
 		AE60CF621A157B0500BD4585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE60CF111A15763300BD4585 /* Main.storyboard */; };
+		AE60CFC11A16BA0800BD4585 /* libRobot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE60CFBC1A16B9F300BD4585 /* libRobot.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = AE60CF031A15763300BD4585;
 			remoteInfo = RobotSpike;
+		};
+		AE60CFBB1A16B9F300BD4585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE60CFB51A16B9F300BD4585 /* Robot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F45D75F1915E581005271F1;
+			remoteInfo = Robot;
+		};
+		AE60CFBD1A16B9F300BD4585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE60CFB51A16B9F300BD4585 /* Robot.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F7E867319399A690039400F;
+			remoteInfo = "Robot Tests";
+		};
+		AE60CFBF1A16BA0400BD4585 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE60CFB51A16B9F300BD4585 /* Robot.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F45D75E1915E581005271F1;
+			remoteInfo = Robot;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,6 +88,7 @@
 		AE60CF581A1576A300BD4585 /* RobotSpikeSpec.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RobotSpikeSpec.mm; sourceTree = "<group>"; };
 		AE60CF5D1A1578C900BD4585 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
 		AE60CF5E1A1578C900BD4585 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
+		AE60CFB51A16B9F300BD4585 /* Robot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Robot.xcodeproj; path = Robot/Robot.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE60CFC11A16BA0800BD4585 /* libRobot.a in Frameworks */,
 				AE60CF491A1576A200BD4585 /* CoreGraphics.framework in Frameworks */,
 				AE60CF461A1576A200BD4585 /* UIKit.framework in Frameworks */,
 				AE60CF551A1576A300BD4585 /* Cedar-iOS.framework in Frameworks */,
@@ -103,6 +127,7 @@
 				AE60CF061A15763300BD4585 /* RobotSpike */,
 				AE60CF201A15763300BD4585 /* RobotSpikeTests */,
 				AE60CF4A1A1576A200BD4585 /* RobotSpikeCedarSpecs */,
+				AE60CF651A16B9D300BD4585 /* Externals */,
 				AE60CF311A15766600BD4585 /* Frameworks */,
 				AE60CF051A15763300BD4585 /* Products */,
 			);
@@ -193,6 +218,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AE60CF651A16B9D300BD4585 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				AE60CFB51A16B9F300BD4585 /* Robot.xcodeproj */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		AE60CFB61A16B9F300BD4585 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE60CFBC1A16B9F300BD4585 /* libRobot.a */,
+				AE60CFBE1A16B9F300BD4585 /* Robot Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,6 +284,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AE60CFC01A16BA0400BD4585 /* PBXTargetDependency */,
 			);
 			name = RobotSpikeCedarSpecs;
 			productName = RobotSpikeCedarSpecs;
@@ -280,6 +323,12 @@
 			mainGroup = AE60CEFB1A15763300BD4585;
 			productRefGroup = AE60CF051A15763300BD4585 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AE60CFB61A16B9F300BD4585 /* Products */;
+					ProjectRef = AE60CFB51A16B9F300BD4585 /* Robot.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AE60CF031A15763300BD4585 /* RobotSpike */,
@@ -288,6 +337,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AE60CFBC1A16B9F300BD4585 /* libRobot.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRobot.a;
+			remoteRef = AE60CFBB1A16B9F300BD4585 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AE60CFBE1A16B9F300BD4585 /* Robot Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Robot Tests.app";
+			remoteRef = AE60CFBD1A16B9F300BD4585 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AE60CF021A15763300BD4585 /* Resources */ = {
@@ -358,6 +424,11 @@
 			isa = PBXTargetDependency;
 			target = AE60CF031A15763300BD4585 /* RobotSpike */;
 			targetProxy = AE60CF1E1A15763300BD4585 /* PBXContainerItemProxy */;
+		};
+		AE60CFC01A16BA0400BD4585 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Robot;
+			targetProxy = AE60CFBF1A16BA0400BD4585 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -525,6 +596,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Externals/Robot/Robot/Public/**",
+				);
 				INFOPLIST_FILE = RobotSpikeCedarSpecs/Info.plist;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -543,6 +619,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RobotSpikeCedarSpecs/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/Externals/Robot/Robot/Public/**",
 				);
 				INFOPLIST_FILE = RobotSpikeCedarSpecs/Info.plist;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -575,6 +656,7 @@
 				AE60CF291A15763300BD4585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE60CF2A1A15763300BD4585 /* Build configuration list for PBXNativeTarget "RobotSpikeTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +665,7 @@
 				AE60CF2C1A15763300BD4585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE60CF5A1A1576A300BD4585 /* Build configuration list for PBXNativeTarget "RobotSpikeCedarSpecs" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +674,7 @@
 				AE60CF5C1A1576A300BD4585 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

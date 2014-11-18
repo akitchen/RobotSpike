@@ -1,0 +1,3 @@
+[submodule "Externals/Robot"]
+	path = Externals/Robot
+	url = https://github.com/jeffh/Robot.git
